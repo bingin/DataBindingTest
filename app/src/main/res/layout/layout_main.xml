@@ -4,9 +4,23 @@
 
     <data>
 
+        <import type="com.bingin.databindingtest.Student"/>
+
         <variable
             name="stu"
-            type="com.bingin.databindingtest.Student"/>
+            type="Student"/>
+
+        <variable
+            name="str"
+            type="String"/>
+
+        <variable
+            name="error"
+            type="boolean"/>
+
+        <variable
+            name="num"
+            type="int"/>
     </data>
 
     <LinearLayout
@@ -22,6 +36,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{stu.addr}"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@{str}"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@{String.valueOf(num)}"
+            android:layout_height="wrap_content"/>
 
     </LinearLayout>
 
