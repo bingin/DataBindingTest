@@ -6,6 +6,12 @@
 
         <import type="com.bingin.databindingtest.Student"/>
 
+        <import type="android.graphics.Bitmap"/>
+
+        <import type="java.util.ArrayList"/>
+
+        <import type="java.util.HashMap"/>
+
         <variable
             name="stu"
             type="Student"/>
@@ -21,6 +27,35 @@
         <variable
             name="num"
             type="int"/>
+
+        <variable
+            name="bitmap"
+            type="Bitmap"/>
+
+        <variable
+            name="list"
+            type="ArrayList&lt;String&gt;"/>
+
+        <variable
+            name="map"
+            type="HashMap&lt;String,String&gt;"/>
+
+        <variable
+            name="array"
+            type="String[]"/>
+
+        <variable
+            name="listkey"
+            type="int"/>
+
+        <variable
+            name="mapkey"
+            type="String"/>
+
+        <variable
+            name="arraykey"
+            type="int"/>
+
     </data>
 
     <LinearLayout
@@ -39,14 +74,33 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:text="@{str}"
+            android:layout_height="wrap_content"
+            android:text="@{str}"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(num)}"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@{String.valueOf(error)}"
             android:layout_height="wrap_content"/>
 
         <TextView
             android:layout_width="wrap_content"
-            android:text="@{String.valueOf(num)}"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="@{list[listkey]}"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{map[`age`]}"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{array[arraykey]}"/>
     </LinearLayout>
 
 </layout>
